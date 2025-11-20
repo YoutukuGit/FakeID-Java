@@ -22,7 +22,7 @@ public class Main {
             String sql = "SELECT * FROM divisions;";
             try (java.sql.ResultSet rs = stmt.executeQuery(sql)) {
                 while (rs.next()) {
-                    regionMap.put(rs.getString("code"),rs.getString("namep"));
+                    regionMap.put(rs.getString("code"),rs.getString("name"));
                 }
             }
             stmt.close();
